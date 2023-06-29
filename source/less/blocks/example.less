@@ -1,0 +1,116 @@
+.example {
+    padding-bottom: 25px;
+    background-color: #eaeaea;
+}
+
+.example__container {
+    // background-color: #eaeaea;
+}
+
+.example__title {
+    font-size: 36px;
+    line-height: 40px;
+    padding-top: 27px;
+    margin-bottom: 33px;
+}
+
+.example__discription {
+    font-family: 'Arial';
+    font-size: 14px;
+    line-height: 18px;
+    padding-right: 2px;
+    margin-bottom: 22px;
+}
+
+.example__variation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.example__box {
+    width: 124px;
+    height: 56px;
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    flex-shrink: 0;
+
+    margin-bottom: 34px;
+}
+
+.example__quantity {
+    font-size: 24px;
+    line-height: 24px;
+    color: #000;
+    padding-top: 30px;
+    padding-bottom: 6px;
+}
+
+.example__discr {
+    font-family: 'Arial';
+    font-size: 12px;
+    line-height: 12px;
+    width: 77px;
+    background-color: #eaeaea;
+}
+
+.example__cost {
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+.example__pict {
+    text-align: center;
+    margin-bottom: 23px;
+}
+
+.example__img img {
+    display: block;
+}
+
+.example__change {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 27px;
+}
+
+.example__btn {
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding: 1px 3px;
+    border: none;
+    background-color: #eaeaea;
+}
+
+.example__line-decor {
+    width: 84px;
+    height: 14px;
+    background-color: #fff;
+    border: 1px solid #cdcdcd;
+    border-radius: 6px;
+    position: relative;
+}
+
+.example__line-decor::after {
+    content: "";
+    width: 36px;
+    height: 6px;
+    background: @basic-green;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    border-radius: 3px;
+    transform: translateY(-50%);
+
+}

@@ -1,0 +1,31 @@
+.social__list {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #d9d9d9;
+    border-right: none;
+    border-left: none;
+    min-height: 63px;
+    margin: 0 20px;
+    align-items: center;
+    padding: 0 -77px;
+}
+
+.social__item:nth-child(1) {
+    padding-left: 73px;
+}
+
+.social__item:nth-child(3) {
+    padding-right: 77px;
+}
+
+.social__link {
+    display: block;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        // inset: -8px -5px -8px -5px;
+        inset: -10px;
+    }
+}
