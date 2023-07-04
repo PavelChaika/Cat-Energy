@@ -73,6 +73,7 @@
 }
 
 .program__btn {
+    position: relative;
     display: flex;
     align-items: center;
     font-size: 16px;
@@ -83,6 +84,12 @@
     padding: 0px;
     text-decoration: none;
     color: #000;
+}
+
+.program__btn::after {
+    content: "";
+    position: absolute;
+    inset: -15px 0px -18px -20px;
 }
 
 .program__arrow {

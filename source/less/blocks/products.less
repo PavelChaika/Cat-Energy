@@ -1,17 +1,17 @@
 
-
 .products__title {
     // text-transform: uppercase;
     font-size: 36px;
     line-height: 36px;
     border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #ebebeb;
     padding: 26px 0 41px 20px;
     // border-width: 100%;
 }
 
 
 .products__item {
-    border: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
     border-right: none;
     border-left: none;
     padding: 0px 20px 25px;
@@ -24,15 +24,45 @@
 }
 
 .products__img {
-    padding: 32px 36px 24px;
+    // padding: 32px 36px 24px;
+    // flex-grow: 1;
+    width: 50%;
 }
 
 .products__img img {
     display: block;
 }
 
+.products__item:nth-of-type(1) .products__img {
+    padding-top: 33px;
+    padding-left: 36px;
+}
+
+.products__item:nth-of-type(2) .products__img,
+.products__item:nth-of-type(4) .products__img,
+.products__item:nth-of-type(6) .products__img {
+    padding-top: 30px;
+    padding-left: 28px;
+}
+
+.products__item:nth-of-type(3) .products__img {
+    padding-top: 46px;
+    padding-left: 36px;
+}
+
+.products__item:nth-of-type(5) .products__img {
+    padding-top: 30px;
+    padding-left: 36px;
+}
+
+.products__item:nth-of-type(7) .products__img {
+    padding-top: 43px;
+    padding-left: 34px;
+}
+
 .products__descrition {
-    flex-grow: 1;
+    // flex-grow: 1;
+    width: 50%;
 }
 
 .products__btn {
@@ -47,4 +77,61 @@
     // background: @basic-green;
     // border: none;
     margin: 0 auto;
+}
+
+
+.products-add {
+    text-align: center;
+    border-bottom: 1px solid #ebebeb;
+    padding-top: 26px;
+    padding-bottom: 25px;
+}
+
+.products-add__decor {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.products-add__decor::before,
+.products-add__decor::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 0px;
+    width: 30px;
+    height: 2px;
+    background: #d3d3d3;
+}
+
+.products-add__decor::after {
+    transform: rotate(90deg);
+}
+
+.products-add__title {
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin-top: 23px;
+    margin-bottom: 8px;
+}
+
+.products-add__inf {
+    font-family: arial;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 21px;
+}
+
+.products-add__btn {
+    font-size: 16px;
+    line-height: 0px;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 20px 0px;
+    color: @basic-dark-gray;
+    background: @basic-gray;
 }
