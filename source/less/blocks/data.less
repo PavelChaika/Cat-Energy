@@ -1,0 +1,39 @@
+.data {
+    border: none;
+    padding: 0;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.data__item {
+    display: flex;
+    align-items: baseline;
+}
+
+.data__item:last-of-type {
+    margin-bottom: 10px;
+}
+
+.data__label,
+.data__item input {
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: @basic-dark-gray;
+}
+
+.data__label {
+    margin-right: 13px;
+    width: max-content;
+}
+
+.data__item input {
+    border: 1px solid #e7e7e7;
+    padding: 13px 0px 13px 16px;
+    margin-bottom: 14px;
+    flex-grow: 1;
+}
+
+.data__item input::placeholder {
+    color: @basic-dark-gray;
+    width: min-content;
+}

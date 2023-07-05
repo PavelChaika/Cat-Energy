@@ -59,7 +59,7 @@
                 <button class="main-nav__toggle pop-up__close" type="button">
                     <span class="visually-hidden">закрыть меню</span>
                 </button>
-                <ul class="main-nav__list">
+                <ul class="main-nav__list visually-hidden">
                     <li class="main-nav__item">                        
                         <a href="index.html">
                             главная
@@ -80,406 +80,115 @@
         </div>
     </header>
 
-    <main class="catalog-page catalog">
+    <main class="page-form">
 
-        <section class="products">
-            <h1 class="products__title">
-                Каталог продукции
+        <section class="scheme">
+            <h1 class="scheme__title">
+                Подбор программы
             </h1>
-            <ul class="products__list">
-                <li class="products__item">
-                    <div class="products__wrapper">
-                        <span class="products__img">
-                            <img src="img/catalog-1-mobile.png" alt="корм" width="68" height="86">
-                        </span>
-                        <div class="products__descrition">
-                            <!-- <h2>
-                                Cat Energy PRO 500 г
-                            </h2> -->
-                            <table class="catalog__table table">
-                                <caption class="table__title">Cat Energy <br> PRO 500 г</caption>
-                                <!-- <caption class="visually-hidden">Продукт</caption> -->
-                                <tbody class="table__product">
-                                    <tr>
-                                        <th class="table__option table__cell">
-                                            Масса
-                                        </th>
-                                        <td class="table__range table__cell">
-                                            500 г
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th class="table__option table__cell">
-                                            Вкус
-                                        </th>
-                                        <td class="table__range table__cell">
-                                            Курица
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th class="table__option table__cell">
-                                            Цена
-                                        </th>
-                                        <td class="table__range table__cell">
-                                            700 Р.
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+            <p class="scheme__text">
+                Заполните анкету, и мы подберем
+                программу питания для вашего кота
+            </p>
+            <form class="scheme__form form" action="#" method="post">
+                <fieldset class="form__data data">
+                    <legend class="data__legend visually-hidden">Данные</legend>
+                    <div class="data__item">
+                        <label class="data__label" for="name">Имя:*</label>
+                        <input id="name" type="text" name="1st-name" placeholder="Барсик">
                     </div>
-                    <button class="products__btn" type="button">
-                        Заказать
-                    </button>
-                </li>
-                <li class="products__item">
-                    <div class="products__wrapper">
-                        <span class="products__img">
-                            <img src="img/catalog-2-mobile.png" alt="корм" width="84" height="101">
-                        </span>
-                        <div class="products__descrition">
-                            <table class="catalog__table table">
-                                <caption class="table__title">Cat Energy <br> PRO 1000 г</caption>
-                                <tbody class="table__product">
-                                    <tr>
-                                        <th class="table__option table__cell">
-                                            Масса
-                                        </th>
-                                        <td class="table__range table__cell">
-                                            1000 г
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th class="table__option table__cell">
-                                            Вкус
-                                        </th>
-                                        <td class="table__range table__cell">
-                                            Курица
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th class="table__option table__cell">
-                                            Цена
-                                        </th>
-                                        <td class="table__range table__cell">
-                                            1000 Р.
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                    <div class="data__item">
+                        <label class="data__label" for="weight">Вес (кг)*:</label>
+                        <input id="weight" type="text" name="weight" placeholder="7">
                     </div>
-                    <button class="products__btn" type="button">
-                        Заказать
-                    </button>
-                </li>
-                <li class="products__item">
-                    <div class="products__wrapper">
-                        <span class="products__img">
-                            <img src="img/catalog-3-mobile.png" alt="корм" width="68" height="78">
-                        </span>
-                        <div class="products__descrition">
-                            <table class="catalog__table table">
-                                <caption class="table__title">Cat Energy <br> PRO 500 г</caption>
-                                <tbody class="table__product">
-                                    <tr>
-                                        <th class="table__option table__cell">
-                                            Масса
-                                        </th>
-                                        <td class="table__range table__cell">
-                                            500 г
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th class="table__option table__cell">
-                                            Вкус
-                                        </th>
-                                        <td class="table__range table__cell">
-                                            Рыба
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th class="table__option table__cell">
-                                            Цена
-                                        </th>
-                                        <td class="table__range table__cell">
-                                            700 Р.
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+                    <div class="data__item">
+                        <label class="data__label" for="age">Возраст (Лет):</label>
+                        <input id="age" type="text" name="age" placeholder="7">
                     </div>
-                    <button class="products__btn" type="button">
-                        Заказать
-                    </button>
-                </li>
-                <li class="products__item">
-                    <div class="products__wrapper">
-                        <span class="products__img">
-                            <img src="img/catalog-4-mobile.png" alt="корм" width="84" height="101">
-                        </span>
-                        <div class="products__descrition">
-                            <table class="catalog__table table">
-                                <caption class="table__title">Cat Energy <br> PRO 1000 г</caption>
-                                <tbody class="table__product">
-                                    <tr>
-                                        <th class="table__option table__cell">
-                                            Масса
-                                        </th>
-                                        <td class="table__range table__cell">
-                                            1000 г
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th class="table__option table__cell">
-                                            Вкус
-                                        </th>
-                                        <td class="table__range table__cell">
-                                            Рыба
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th class="table__option table__cell">
-                                            Цена
-                                        </th>
-                                        <td class="table__range table__cell">
-                                            1000 Р.
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <button class="products__btn" type="button">
-                        Заказать
-                    </button>
-                </li>
-                <li class="products__item">
-                    <div class="products__wrapper">
-                        <span class="products__img">
-                            <img src="img/catalog-5-mobile.png" alt="корм" width="68" height="78">
-                        </span>
-                        <div class="products__descrition">
-                            <table class="catalog__table table">
-                                <caption class="table__title">Cat Energy <br> SLIM 500 г</caption>
-                                <tbody class="table__product">
-                                    <tr>
-                                        <th class="table__option table__cell">
-                                            Масса
-                                        </th>
-                                        <td class="table__range table__cell">
-                                            500 г
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th class="table__option table__cell">
-                                            Вкус
-                                        </th>
-                                        <td class="table__range table__cell">
-                                            Гречка
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th class="table__option table__cell">
-                                            Цена
-                                        </th>
-                                        <td class="table__range table__cell">
-                                            400 Р.
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <button class="products__btn" type="button">
-                        Заказать
-                    </button>
-                </li>
-                <li class="products__item">
-                    <div class="products__wrapper">
-                        <span class="products__img">
-                            <img src="img/catalog-6-mobile.png" alt="корм" width="84" height="100">
-                        </span>
-                        <div class="products__descrition">
-                            <table class="catalog__table table">
-                                <caption class="table__title">Cat Energy <br> SLIM 1000 г</caption>
-                                <tbody class="table__product">
-                                    <tr>
-                                        <th class="table__option table__cell">
-                                            Масса
-                                        </th>
-                                        <td class="table__range table__cell">
-                                            1000 г
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th class="table__option table__cell">
-                                            Вкус
-                                        </th>
-                                        <td class="table__range table__cell">
-                                            Гречка
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th class="table__option table__cell">
-                                            Цена
-                                        </th>
-                                        <td class="table__range table__cell">
-                                            700 Р.
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <button class="products__btn" type="button">
-                        Заказать
-                    </button>
-                </li>
-                <li class="products__item">
-                    <div class="products__wrapper">
-                        <span class="products__img">
-                            <img src="img/catalog-7-mobile.png" alt="корм" width="72" height="84">
-                        </span>
-                        <div class="products__descrition">
-                            <table class="catalog__table table">
-                                <caption class="table__title">Cat Energy <br> SLIM 500 г</caption>
-                                <tbody class="table__product">
-                                    <tr>
-                                        <th class="table__option table__cell">
-                                            Масса
-                                        </th>
-                                        <td class="table__range table__cell">
-                                            500 г
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th class="table__option table__cell">
-                                            Вкус
-                                        </th>
-                                        <td class="table__range table__cell">
-                                            Рис
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th class="table__option table__cell">
-                                            Цена
-                                        </th>
-                                        <td class="table__range table__cell">
-                                            500 Р.
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <button class="products__btn" type="button">
-                        Заказать
-                    </button>
-                </li>
-            </ul>
-            <div class="products-add catalog__container">
-                <span class="products-add__decor"></span>
-                <p class="products-add__title">
-                    Показать еще 100500 товаров
-                </p>
-                <p class="products-add__inf">
-                    На самом деле вкусов гораздо больше!
-                </p>
-                <button class="products-add__btn" type="button">
-                    Показать все
-                </button>
-            </div>
+                </fieldset>
 
-        </section>
+                <fieldset class="scheme__option radio">
+                    <legend class="radio__legend visually-hidden">Пожелания</legend>
+    
+                    <label class="radio__item">
+                        <input class="visually-hidden" type="radio" id="weight-loss" value="похудение" name="weight-loss" checked>
+                        <span class="radio__decor"></span>
+                        Похудение                      
+                    </label>
+                    <label class="radio__item">
+                        <input class="visually-hidden" type="radio" id="weight-gain" value="набор массы" name="weight-gain">
+                        <span class="radio__decor"></span>
+                        Набор массы                        
+                    </label>
+                    <label class="radio__item">
+                        <input class="visually-hidden" type="radio" id="indifferent" value="нет ответа" name="indifferent">
+                        <span class="radio__decor"></span>
+                        Не знаю (нужен ваш совет)
+                    </label>
+                </fieldset>
 
-        <section class="goods catalog__container">
-            <h2 class="goods__title">
-                Дополнительные товары
-            </h2>
-            <ul class="goods__list">
-                <li class="goods__item">
-                    <table class="goods-table">
-                        <caption class="goods-table__title">Сахарозаменитель</caption>
-                        <tbody class="goods-table__product">
-                            <tr>
-                                <th class="goods-table__option goods-table__cell">
-                                    1 упаковка (100 г)
-                                </th>
-                                <td class="goods-table__coast goods-table__cell">
-                                    200 Р.
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <button class="goods__btn products__btn" type="button">
-                        Заказать
-                    </button>
-                </li>
-                <li class="goods__item">
-                    <table class="goods-table">
-                        <caption class="goods-table__title">питьевая вода</caption>
-                        <tbody class="goods-table__product">
-                            <tr>
-                                <th class="goods-table__option goods-table__cell">
-                                    5 литров
-                                </th>
-                                <td class="goods-table__coast goods-table__cell">
-                                    50 Р.
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <button class="goods__btn products__btn" type="button">
-                        Заказать
-                    </button>
-                </li>
-                <li class="goods__item">
-                    <table class="goods-table">
-                        <caption class="goods-table__title">молоко</caption>
-                        <tbody class="goods-table__product">
-                            <tr>
-                                <th class="goods-table__option goods-table__cell">
-                                    1 литр
-                                </th>
-                                <td class="goods-table__coast goods-table__cell">
-                                    100 Р.
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <button class="goods__btn products__btn" type="button">
-                        Заказать
-                    </button>
-                </li>
-                <li class="goods__item">
-                    <table class="goods-table">
-                        <caption class="goods-table__title">витамины</caption>
-                        <tbody class="goods-table__product">
-                            <tr>
-                                <th class="goods-table__option goods-table__cell">
-                                    1 упаковка (30 г)
-                                </th>
-                                <td class="goods-table__coast goods-table__cell">
-                                    300 Р.
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <button class="goods__btn products__btn" type="button">
-                        Заказать
-                    </button>
-                </li>
-            </ul>
-            <div class="goods__gift">
-                <span class="goods__decor"></span>
-                <p>
-                    Закажите все
-                    и получите чехол для
-                    кота в подарок!
-                </p>
-            </div>
+                <fieldset class="scheme__contact-info contact-info">
+                    <legend class="contact-info__title">
+                        Контактные данные (владельца кота):
+                    </legend>
+                    <div class="contact-info__item">
+                        <label class="contact-info__label" for="e-mail">
+                            E-MAIL*:
+                        </label>    
+                        <div class="contact-info__wrap">
+                            <input id="e-mail" type="email" name="e-mail" placeholder="KUKLACHEV@GMAIL.COM">
+                            <span class="contact-info__icon contact-info__icon--letter"></span>
+                        </div>    
+                    </div>    
+                    <div class="contact-info__item">
+                        <label class="contact-info__label" for="phone">
+                            ТЕЛЕФОН*:
+                        </label>    
+                        <div class="contact-info__wrap">
+                            <input id="phone" type="tel" name="phone" placeholder="8(960)900-60-90">
+                            <span class="contact-info__icon contact-info__icon--phone"></span>
+                        </div>
+                    </div>   
+                </fieldset>
+
+                <div class="scheme_comments comments">
+                    <label class="comments__label" for="comments">Комментарий</label>
+                    <textarea name="comments" id="comments" cols="30" rows="4">Расскажите обо всех повадках кота</textarea>
+                </div>
+
+                <fieldset class="scheme__fieldset checkbox">
+                    <legend class="checkbox__legend">Дополнительно</legend>
+    
+                    <label class="checkbox__item">
+                        <input class="visually-hidden" type="checkbox" id="sweetener" value="сахарозаменитель"
+                            name="sweetener" checked>
+                        <span class="checkbox__decor"></span>
+                        сахарозаменитель
+                    </label>
+                    <label class="checkbox__item">
+                        <input class="visually-hidden" type="checkbox" id="water" value="питьевая вода"
+                            name="water" checked>
+                        <span class="checkbox__decor"></span>
+                        питьевая вода
+                    </label>
+                    <label class="checkbox__item">
+                        <input class="visually-hidden" type="checkbox" id="milk" value="молоко"
+                            name="milk" checked>
+                        <span class="checkbox__decor"></span>
+                        молоко
+                    </label>
+                    <label class="checkbox__item">
+                        <input class="visually-hidden" type="checkbox" id="vitamins" value="витамины"
+                            name="vitamins">
+                        <span class="checkbox__decor"></span>
+                        витамины
+                    </label>
+                </fieldset>    
+
+                <button class="scheme__btn" type="submit">Отправить заявку</button>
+                <span class="form__option">*-Обязательные поля</span>
+            </form>
+
         </section>
 
         <footer class="footer">
