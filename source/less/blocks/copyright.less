@@ -3,6 +3,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 22px 20px 22px 19px;
+
+    @media (min-width: @tablet-width) {
+        padding: 0;
+    }
 }
 
 .copyright__text {
@@ -10,6 +14,10 @@
     font-size: 16px;
     line-height: normal;
     text-decoration: none;
+
+    @media (min-width: @tablet-width) {
+        margin-right: 22px;
+    }
 }
 
 .copyright__link:hover path,

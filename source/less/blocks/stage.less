@@ -1,13 +1,31 @@
 .stage {
     // margin-top: 27px;
     padding-bottom: 22px;
+
+    @media (min-width: @tablet-width) {
+        border-bottom: 1px solid #e6e6e6;
+        padding-bottom: 104px;
+    }
 }
 
 
 .stage__title {
-    font-size: 36px;
-    line-height: 40px;
     margin-bottom: 38px;
+
+    @media (min-width: @tablet-width) {
+        margin-bottom: 72px;
+    }
+}
+
+.stage__list {
+    @media (min-width: @tablet-width) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        row-gap: 134px;
+        column-gap: 108px;
+        margin-right: 109px;
+    }
 }
 
 .stage__item {
@@ -21,12 +39,26 @@
     grid-template-columns: 60px 1fr;
     grid-template-rows: 60px auto;
     column-gap: 20px;
+
+    @media (min-width: @tablet-width) {
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
 }
 
 .stage__decor {
     width: 60px;
     height: 60px;
     background: #68B738;
+
+    @media (min-width: @tablet-width) {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 31px;
+    }
 }
 
 .stage__decor--leaf {
