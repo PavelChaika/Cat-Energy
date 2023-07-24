@@ -2,6 +2,12 @@
     text-align: center;
     display: block;
     position: relative;
+
+    @media (min-width: @desktop-width) {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 330px 0 190px;
+    }
 }
 
 .head__wrapper {
@@ -25,6 +31,14 @@
         text-align: left;
         height: auto;
     }
+
+    @media (min-width: @desktop-width) {
+        // margin-left: 190px;
+        // margin-right: 330px;
+        position: relative;
+        // margin-top: 88px;
+        margin-bottom: 373px;
+    }
 }
 
 .head__wrapper h2 {
@@ -36,6 +50,15 @@
         color: #000;
         margin-bottom: 41px;
         padding: 0 237px 0 117px;
+    }
+
+    @media (min-width: @desktop-width) {
+        padding: 0;
+        // margin-top: 88px;
+        width: 46%;
+        // width: 414px;
+        // width: min-content;
+        // margin: 0;
     }
 }
 
@@ -51,12 +74,34 @@
         color: #000;
         padding-left: 117px;
     }
+
+    @media (min-width: @desktop-width) {
+        padding: 0;
+    }
+}
+
+.head__pict {
+    
+    @media (min-width: @desktop-width) {
+        position: absolute;
+        top: -80px;
+        right: 0px;
+        // margin-right: 330px;
+
+    }
 }
 
 .head__pict img {
     width: 100%;
     padding: 0 30px;
     display: block;
+
+    @media (min-width: @desktop-width) {
+        // flex-grow: 1;
+        // width: 100%;
+        // margin-left: -100px;
+        padding: 0;
+    }
 }
 
 .head__btn {
@@ -81,5 +126,10 @@
         position: absolute;
         top: 240px;
         left: 117px;
+    }
+
+    @media (min-width: @desktop-width) {
+        left: 190px;
+        top: 232px;
     }
 }

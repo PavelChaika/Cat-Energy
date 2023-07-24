@@ -55,6 +55,9 @@
             <a href="index.html" class="header__logo-tablet">
                 <img src="img/logo-tablet.png" alt="лого" width="174" height="52">
             </a>
+            <a href="index.html" class="header__logo-desktop">
+                <img src="img/logo-desktop.png" alt="лого" width="202" height="59">
+            </a>
             <nav class="header__main-nav main-nav pop-up">
                 <button class="main-nav__toggle pop-up__open" type="button">
                     <span class="visually-hidden">открыть меню</span>
@@ -64,17 +67,18 @@
                 </button>
                 <!-- <ul class="main-nav__list pop-up__closed"> -->
                 <ul class="main-nav__list">
-                    <li class="main-nav__item">
+                    <div class="main-nav__background-desktop"></div>
+                    <li class="main-nav__item main-nav__item--index">
                         <a href="index.html" class="main-nav__active">
                             главная
                         </a>
                     </li>
-                    <li class="main-nav__item">
+                    <li class="main-nav__item main-nav__item--index">
                         <a href="catalog.html">
                             каталог продукции
                         </a>
                     </li>
-                    <li class="main-nav__item">
+                    <li class="main-nav__item main-nav__item--index">
                         <a href="form.html">
                             подбор программы
                         </a>
@@ -88,17 +92,18 @@
 
         <section class="index__head head">
             <!-- <div class="body__container"> -->
+            <!-- <div class="head__background-desktop"></div> -->
             <div class="head__wrapper">
-                <h2>Функциональное питание для котов</h2>
-                <p>Занялся собой? Займись котом!</p>
+                    <h2>Функциональное питание для котов</h2>
+                    <p>Занялся собой? Займись котом!</p>
                 <!-- <img src="img/index-cat-mobile_1.png" alt="порция" width="280" height="270"> -->
-                <div>
+                <!-- <div> -->
                     <picture class="head__pict">
-                        <source srcset="img/map-desktop.png" media="(min-width: 1200px)">
+                        <source srcset="img/index-cat-desktop.png" media="(min-width: 1200px)">
                         <source srcset="img/index-cat-tablet_1.png" media="(min-width: 768px)">
                         <img src="img/index-cat-mobile_1.png" alt="порция" width="280" height="270">
                     </picture>
-                </div>
+                <!-- </div> -->
             </div>
             <!-- <button class="head__btn btn" type="button">Подобрать программу</button> -->
             <a class="head__btn btn" href="form.html">Подобрать программу</a>
@@ -112,7 +117,7 @@
                         <div class="program__wrapper">
                             <div class="program__decor">
                                 <picture class="program__pict">
-                                    <source srcset="img/map-desktop.png" media="(min-width: 1200px)">
+                                    <source srcset="img/cat-slim-desktop.png" media="(min-width: 1200px)">
                                     <source srcset="img/cat-slim-tablet.png" media="(min-width: 768px)">
                                     <img src="img/cat-slim.png" alt="кот" width="36" height="50">
                                 </picture>
@@ -132,7 +137,7 @@
                         <div class="program__wrapper">
                             <div class="program__decor">
                                 <picture class="program__pict">
-                                    <source srcset="img/map-desktop.png" media="(min-width: 1200px)">
+                                    <source srcset="img/cat-pro-desktop.png" media="(min-width: 1200px)">
                                     <source srcset="img/cat-pro-tablet.png" media="(min-width: 768px)">
                                     <img src="img/cat-pro.png" alt="тигр" width="67" height="28">
                                 </picture>
@@ -228,16 +233,18 @@
                     </div>
                     <p class="example__cost">Затраты на питание: <br class="example__cost-br"> 15 000 РУБ.</p>
                 </div>
-
+        
                 <div class="example__pict">
                     <img class="example__pict-mobile" src="img/before-mobile_1.png" alt="изменения" width="311" height="232">
-                    <img class="example__pict-tablet example__pict-tablet--before" src="img/before-tablet 1.png" alt="изменения до" width="354" height="620">
-                    <img class="example__pict-tablet example__pict-tablet--after" src="img/after-tablet 1.png" alt="изменения после" width="354" height="607">
+                    <img class="example__pict-tablet example__pict-tablet--before" src="img/before-tablet 1.png"
+                        alt="изменения до" width="354" height="620">
+                    <img class="example__pict-tablet example__pict-tablet--after" src="img/after-tablet 1.png"
+                        alt="изменения после" width="354" height="607">
                 </div>
                 <div class="example__change">
-                    <button class="example__btn">Было</button>
+                    <button class="example__btn example__btn--before">Было</button>
                     <span class="example__line-decor"></span>
-                    <button class="example__btn">Стало</button>
+                    <button class="example__btn example__btn--after">Стало</button>
                 </div>
             </div>
         </section>

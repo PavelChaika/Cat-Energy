@@ -16,6 +16,11 @@
     @media (min-width: @tablet-width) {
         margin: 24px 0 64px;
     }
+
+    @media (min-width: @desktop-width) {
+        margin: 0 auto;
+        padding: 53px 110px 111px;
+    }
 }
 
 .header__logo {
@@ -36,6 +41,18 @@
     display: none;
 
     @media (min-width: @tablet-width) {
+        display: block;
+    }
+
+    @media (min-width: @desktop-width) {
+        display: none;
+    }
+}
+
+.header__logo-desktop {
+    display: none;
+
+    @media (min-width: @desktop-width) {
         display: block;
     }
 }
