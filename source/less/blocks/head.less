@@ -2,6 +2,7 @@
     text-align: center;
     display: block;
     position: relative;
+    // padding: 0 20px;
 
     @media (min-width: @desktop-width) {
         max-width: 1440px;
@@ -14,8 +15,8 @@
     text-align: center;
     margin: 0 auto;
     // width: 320px;
-    height: 305px;
-    padding-top: 27px;
+    // height: 305px;
+    // padding-top: 27px;
     color: @basic-white;
     // background-image: url(../img/index_backgroud_cat_mobile.png);
     // background: @basic-green url(../img/index_backgroud_cat_mobile.png) no-repeat center top;
@@ -24,12 +25,15 @@
     background-position: center;
     background-repeat: no-repeat;
     // min-height: 305px;
+    max-height: 305px;
+    // height: 64%;
 
     @media (min-width: @tablet-width) {
         background: none;
         padding: 0;
         text-align: left;
-        height: auto;
+        max-height: 100%;
+
     }
 
     @media (min-width: @desktop-width) {
@@ -44,12 +48,14 @@
 .head__wrapper h2 {
     color: @basic-white;
     margin-bottom: 25px;
-    min-height: 72px;
+    min-height: 80px;
+    padding: 27px 20px 0;
 
     @media (min-width: @tablet-width) {
         color: #000;
         margin-bottom: 41px;
-        padding: 0 237px 0 117px;
+        padding: 0 200px 0 117px;
+        min-height: 120px;
     }
 
     @media (min-width: @desktop-width) {
@@ -66,7 +72,7 @@
     font-size: 14px;
     line-height: 14px;
     text-transform: uppercase;
-    padding-bottom: 29px;
+    margin-bottom: 25px;
 
     @media (min-width: @tablet-width) {
         font-size: 20px;
@@ -81,20 +87,28 @@
 }
 
 .head__pict {
-    
+    // display: block;
+
     @media (min-width: @desktop-width) {
         position: absolute;
         top: -80px;
         right: 0px;
         // margin-right: 330px;
+        // max-width: 100%;
 
     }
 }
 
 .head__pict img {
-    width: 100%;
-    padding: 0 30px;
+    // width: 100%;
+    // padding: 0 30px;
+    margin: 0 auto;
     display: block;
+
+    @media (min-width: @tablet-width) {
+        // width: 100%;
+        width: auto;
+    }
 
     @media (min-width: @desktop-width) {
         // flex-grow: 1;
@@ -124,7 +138,7 @@
         width: auto;
         margin: 0;
         position: absolute;
-        top: 240px;
+        top: 234px;
         left: 117px;
     }
 
