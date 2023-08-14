@@ -227,18 +227,24 @@
                     к сотрудничеству дилеров!
                 </h2>
                 <p class="footer__address">
-                    ул. Большая
-                    Конюшенная, д. 19/8
-                    Санкт-Петербург
+                    <span class="footer__address-wrap">
+                        ул. Большая
+                        Конюшенная, д. 19/8
+                    </span>
+                    <span class="footer__address-wrap">
+                        Санкт-Петербург
+                    </span>
                 </p>
             </div>
             <div class="footer__map">
                 <picture class="footer__map-pict">
-                    <!-- <source srcset="img/map-desktop.jpg" media="(min-width: 1200px)">
-                    <source srcset="img/map-tablet.jpg" media="(min-width: 768px)"> -->
+                    <source srcset="img/map-desktop.png" media="(min-width: 1440px)">
+                    <source srcset="img/map-tablet.png" media="(min-width: 768px)">
                     <img src="img/map.png" alt="карта" width="320" height="362">
                 </picture>
             </div>
+        </div>
+        <div class="footer__wrapp">
             <div class="footer__logo">
                 <a href="index.html">
                     <svg width="128" height="24" viewBox="0 0 128 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -321,7 +327,7 @@
                 </ul>
             </div>
             <div class="footer__copyright copyright">
-                <p class="copyright__text">HTML Academy</p>
+                <a href="#" class="copyright__text">HTML Academy</a>
                 <a href="#" class="copyright__link">
                     <svg width="27" height="34" viewBox="0 0 27 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_95_230)">
@@ -336,11 +342,11 @@
                         </defs>
                     </svg>
                 </a>
-            </div>
-        </div>
+            </div>                
+        </div>            
     </footer>
 
-    <script>
+     <script>
         var navPop = document.querySelector('.main-nav__list');
         var closeToggle = document.querySelector('.pop-up__close');
         var openToggle = document.querySelector('.pop-up__open');

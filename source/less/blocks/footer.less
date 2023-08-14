@@ -1,10 +1,10 @@
 .footer__container {
-    // max-width: 1160px;
+    max-width: 1440px;
     margin: 0 auto;
     background-color: @basic-gray;
 
     @media (min-width: @desktop-width) {
-        padding: 0 110px;
+        position: relative;
     }
 }
 
@@ -20,6 +20,47 @@
 
 .footer__wrapper--index {
     background-color: #fff;
+
+    @media (min-width: @desktop-width) {
+        position: absolute;
+        top: 50%;
+        left: 110px;
+        transform: translateY(-50%);
+        z-index: 1;
+        padding: 0;
+        max-width: 570px;
+        align-items: center;
+        padding: 66px 89px 55px 76px;
+        justify-content: start;
+    }
+}
+
+.footer__map {
+    position: relative;
+}
+
+.footer__map::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/map_pin-mobile.png);
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translateY(-15px);
+
+    @media (min-width: @tablet-width) {
+        background-image: url(../img/map_pin.png);
+        // transform: translateY(-35px);
+    }
+
+    @media (min-width: @desktop-width) {
+        width: 113px;
+        height: 106px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 64%;
+    }
 }
 
 .footer__title {
@@ -33,6 +74,11 @@
         line-height: 21px;
         padding-right: 295px;
     }
+
+    @media (min-width: @desktop-width) {
+        padding: 0;
+        margin-right: 30px;
+    }
 }
 
 .footer__address {
@@ -44,6 +90,22 @@
         font-size: 16px;
         line-height: 22px;
         text-align: right;
+    }
+
+    @media (min-width: @desktop-width) {
+        text-align: left;
+        // padding-right: 89px;
+        line-height: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.footer__address .footer__address-wrap:first-of-type {
+
+    @media (min-width: @desktop-width) {
+        margin-bottom: 20px;
+        // padding-bottom: 10px;
     }
 }
 
@@ -58,6 +120,8 @@
 }
 
 .footer__wrapp {
+    background-color: #f2f2f2;
+
     @media (min-width: @tablet-width) {
         display: flex;
         justify-content: space-between;
@@ -66,14 +130,20 @@
         padding-top: 60px;
         padding-bottom: 66px;
     }
+
+    @media (min-width: @desktop-width) {
+        padding: 0 110px;
+        padding-top: 63px;
+        padding-bottom: 62px;
+    }
 }
 
 .footer__logo {
     text-align: center;
-    margin: 39px 0 32px;
+    padding: 39px 0 32px;
 
     @media (min-width: @tablet-width) {
-        margin: 0;
+        padding: 0;
     }
 }
 

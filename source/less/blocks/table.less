@@ -2,6 +2,10 @@
     border-collapse: collapse;
     width: 100%;
     margin-bottom: 22px;
+
+    @media (min-width: @tablet-width) {
+        margin: 0 auto;
+    }
 }
 
 
@@ -17,6 +21,28 @@
     // padding-right: 66px;
     padding-bottom: 14px;
     text-align: left;
+
+    @media (min-width: @tablet-width) {
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        padding: 0 50px;
+        padding-bottom: 21px;
+    }
+}
+
+.table__title--br {
+
+    @media (min-width: @tablet-width) {
+        display: none;
+    }
+}
+
+.table tr {
+
+    @media (min-width: @tablet-width) {
+        border-bottom: 1px solid #cdcdcd;
+    }
 }
 
 .table__cell {
@@ -24,6 +50,13 @@
     line-height: 16px;
     font-weight: normal;
     // border: 1px solid #000;
+
+    @media (min-width: @tablet-width) {
+        font-size: 16px;
+        line-height: 16px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
 }
 
 .table__option {
