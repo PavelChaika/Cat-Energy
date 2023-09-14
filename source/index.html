@@ -221,16 +221,24 @@
                     </div>
                     <div>
                         <div class="example__pict">
-                            <img class="example__pict-mobile" src="img/before-mobile_1.png" alt="изменения" width="311" height="232">
-                            <img class="example__pict-tablet example__pict-tablet--before" src="img/before-tablet_1.png"
+                            <div class="example__pict-wrap">
+                                <img class="example__pict-mobile j-picture-before" src="img/before-mobile_1.png" alt="изменения" width="311" height="232">
+                            </div>
+                            <div class="example__pict-wrap">
+                                <img class="example__pict-mobile j-picture-after" src="img/after-tablet_1.png" alt="изменения" width="311" height="232">
+                            </div>
+                            <!-- <img class="example__pict-tablet example__pict-tablet--before" src="img/before-tablet_1.png"
                                 alt="изменения до" width="354" height="620">
                             <img class="example__pict-tablet example__pict-tablet--after" src="img/after-tablet_1.png"
-                                alt="изменения после" width="354" height="607">
+                                alt="изменения после" width="354" height="607"> -->
                         </div>
                         <div class="example__change">
-                            <button class="example__btn example__btn--before">Было</button>
-                            <span class="example__line-decor"></span>
-                            <button class="example__btn example__btn--after">Стало</button>
+                            <button class="example__btn example__btn--before j-set-before-btn">Было</button>
+                            <div class="example__input-wrap">
+                                <input class="j-photo-control" type="range" id="volume" name="volume" min="0" max="100" />
+                                <label for="volume" class="visually-hidden">Images control</label>
+                            </div>
+                            <button class="example__btn example__btn--after j-set-after-btn">Стало</button>
                         </div>
                     </div> 
                 </div>                  
@@ -388,6 +396,42 @@
             openToggle.classList.add('pop-up__closed');
         }
         );
+
+        // Photo control
+        const photoControl = document.querySelector(".j-photo-control");
+        const pictureBefore = document.querySelector(".j-picture-before");
+        const pictureAfter = document.querySelector(".j-picture-after");
+        const btnBefore = document.querySelector(".j-set-before-btn");
+        const btnAfter = document.querySelector(".j-set-after-btn");
+
+        const setPictureSizes = () => {
+            pictureBefore.style.width = photoControl.value + "%";
+            pictureAfter.style.width = (100 - photoControl.value) + "%";
+        }
+
+        const setPictureSizesToBefore = () => {
+            pictureBefore.style.width = "100%";
+            pictureAfter.style.width = "0%";
+            photoControl.value = 0;
+        }
+
+        const setPictureSizesToAfter = () => {
+            pictureBefore.style.width = "0%";
+            pictureAfter.style.width = "100%";
+            photoControl.value = 100;
+        }
+
+        // Set values at the beginning
+        setPictureSizes();
+
+        // Set values at on input changes
+        photoControl.addEventListener("input", () => {
+            setPictureSizes();
+        });
+
+        // Set values on button click
+        btnBefore.addEventListener("click", setPictureSizesToBefore);
+        btnAfter.addEventListener("click", setPictureSizesToAfter);
     </script>
 
 </body>
