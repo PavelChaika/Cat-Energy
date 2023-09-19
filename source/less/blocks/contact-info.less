@@ -139,6 +139,7 @@
 
 .contact-info__data::placeholder {
     color: @basic-dark-gray;
+    outline: none;
 }
 
 .contact-info__icon {
@@ -163,9 +164,16 @@
     border: 1px solid @basic-dark-gray;
 }
 
+.contact-info__wrap:focus-visible {
+    // outline: none;
+    outline: @basic-dark-gray;
+    // border: 1px solid @basic-dark-gray;
+}
+
 .contact-info__data:focus-visible {
-    outline: none;
-    border: 2px solid @basic-dark-gray;
+    // outline: none;
+    outline: @basic-dark-gray;
+    // border: 3px solid @basic-dark-gray;
 }
 
 .contact-info__wrap:active line,
