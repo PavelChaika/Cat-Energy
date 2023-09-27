@@ -66,7 +66,7 @@
                     <span class="visually-hidden">закрыть меню</span>
                 </button>
                 <ul class="main-nav__list">
-                    <span class="main-nav__background-desktop"></span>
+                    <li class="main-nav__background-desktop"></li>
                     <li class="main-nav__item main-nav__item--index">
                         <a href="index.html" class="main-nav__active main-nav__active--desktop">
                             главная
@@ -106,16 +106,12 @@
             <div class="body__container">
                 <ul class="program__list">
                     <li class="program__item">
-                        <!-- <div class="program__wrapper program__wrapper--reset"> -->
-                            <!-- <div class="program__decor"> -->
                                 <picture class="program__pict program__pict--reset">
                                     <source srcset="img/cat-slim-desktop.png" media="(min-width: 1440px)">
                                     <source srcset="img/cat-slim-tablet.png" media="(min-width: 768px)">
                                     <img src="img/cat-slim.png" alt="кот" width="36" height="50">
                                 </picture>
-                            <!-- </div> -->
                             <h2 class="program__title">Похудение</h2>
-                        <!-- </div> -->
                         <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить
                             по деревьям?
                             Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
@@ -126,16 +122,12 @@
                         </a>
                     </li>
                     <li class="program__item">
-                        <!-- <div class="program__wrapper program__wrapper--increase"> -->
-                            <!-- <div class="program__decor"> -->
                                 <picture class="program__pict program__pict--increase">
                                     <source srcset="img/cat-pro-desktop.png" media="(min-width: 1440px)">
                                     <source srcset="img/cat-pro-tablet.png" media="(min-width: 768px)">
                                     <img src="img/cat-pro.png" alt="тигр" width="67" height="28">
                                 </picture>
-                            <!-- </div> -->
                             <h2 class="program__title">Набор массы</h2>
-                        <!-- </div> -->
                         <p class="program__description">Заработать авторитет среди дворовых котов <br class="program__description-pro"> и даже собак?
                             Серия Cat Energy Pro поможет вашему коту нарастить необходимые <br class="program__description-pro"> мышцы!
                         </p>
@@ -160,7 +152,6 @@
                             содержит только полезные
                             питательные вещества.
                         </p>
-                        <!-- <span class="stage__number">1</span> -->
                     </li>
                     <li class="stage__item">
                         <span class="stage__decor stage__decor--tub"></span>
@@ -169,7 +160,6 @@
                             который нужно лишь залить
                             кипятком и готово.
                         </p>
-                        <!-- <span class="stage__number">2</span> -->
                     </li>
                     <li class="stage__item">
                         <span class="stage__decor stage__decor--eat"></span>
@@ -178,7 +168,6 @@
                             обычной еды на наше
                             функциональное питание.
                         </p>
-                        <!-- <span class="stage__number">3</span> -->
                     </li>
                     <li class="stage__item">
                         <span class="stage__decor stage__decor--alarm"></span>
@@ -186,7 +175,6 @@
                             Уже через месяц наслаждайтесь
                             изменениями к лучшему вашего питомца!
                         </p>
-                        <!-- <span class="stage__number">4</span> -->
                     </li>
                 </ul>
             </div>
@@ -198,7 +186,7 @@
                     Живой пример
                 </h2>
                 <div class="example__desktop">
-                    <div>
+                    <div class="example__test">
                         <p class="example__discription">
                             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
                             Отличный результат без изнуряющих тренировок!
@@ -218,23 +206,19 @@
                             <p class="example__cost">Затраты на питание: <br class="example__cost-br"> 15 000 РУБ.</p>
                         </div>
                     </div>
-                    <div>
+                    <div class="example__test1">
                         <div class="example__pict">
                             <div class="example__pict-wrap">
-                                <img class="example__pict-mobile j-picture-before" src="img/cat_before.png" alt="изменения" width="311" height="232">
+                                <img class="example__pict-mobile j-picture-before" src="img/cat_before_2x.jpg" srcset="img/cat_before_2x.jpg 2x" alt="изменения" width="311" height="232">
                             </div>
                             <div class="example__pict-wrap">
-                                <img class="example__pict-mobile j-picture-after" src="img/cat_after.png" alt="изменения" width="311" height="232">
+                                <img class="example__pict-mobile j-picture-after" src="img/cat_after_2x.jpg" srcset="img/cat_after_2x.jpg 2x" alt="изменения" width="311" height="232">
                             </div>
-                            <!-- <img class="example__pict-tablet example__pict-tablet--before" src="img/before-tablet_1.png"
-                                alt="изменения до" width="354" height="620">
-                            <img class="example__pict-tablet example__pict-tablet--after" src="img/after-tablet_1.png"
-                                alt="изменения после" width="354" height="607"> -->
                         </div>
                         <div class="example__change">
                             <button class="example__btn example__btn--before j-set-before-btn">Было</button>
                             <div class="example__input-wrap">
-                                <input class="j-photo-control" type="range" id="volume" name="volume" min="0" max="100" />
+                                <input class="j-photo-control" type="range" id="volume" name="volume" min="0" max="100">
                                 <label for="volume" class="visually-hidden">Images control</label>
                             </div>
                             <button class="example__btn example__btn--after j-set-after-btn">Стало</button>

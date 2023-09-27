@@ -14,6 +14,7 @@
     text-transform: uppercase;
     display: flex;
     align-items: baseline;
+    margin-bottom: 14px;
     
     @media (min-width: @tablet-width) {
         font-size: 20px;
@@ -26,7 +27,7 @@
 }
 
 .data__item:last-of-type {
-    margin-bottom: 10px;
+    margin-bottom: 24px;
 
     @media (min-width: @desktop-width) {
         margin-bottom: 0px;
@@ -36,31 +37,4 @@
 .data__label {
     margin-right: 13px;
     width: max-content;
-}
-
-.data__item input {
-    border: 1px solid #e7e7e7;
-    padding: 13px 0px 13px 16px;
-    margin-bottom: 14px;
-    flex-grow: 1;
-
-    @media (min-width: @desktop-width) {
-        margin-bottom: 0px;
-    }
-}
-
-.data__item input::placeholder {
-    color: @basic-dark-gray;
-    width: min-content;
-    text-transform: uppercase;
-}
-
-.data__item input:hover,
-.data__item input:focus {
-    border-color: #cdcdcd;
-}
-
-.data__item input:focus-visible {
-    outline: #444;
-    border: 1px solid @basic-dark-gray;
 }

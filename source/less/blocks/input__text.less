@@ -1,0 +1,21 @@
+.input__text {
+    border: 1px solid #e7e7e7;
+    padding: 13px 50px 13px 16px;
+    flex-grow: 1;    
+}
+
+.input__text::placeholder {
+    color: @basic-dark-gray;
+    width: min-content;
+    text-transform: uppercase;
+}
+
+.input__text:hover,
+.input__text:focus {
+    border-color: #cdcdcd;
+}
+    
+.input__text:focus-visible {
+    outline: #444;
+    border: 1px solid @basic-dark-gray;
+}
