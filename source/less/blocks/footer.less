@@ -118,10 +118,20 @@
 
 .footer__wrapp {
     background-color: #f2f2f2;
+    font-size: initial;
 
+    // @media (min-width: @tablet-width) {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: center;
+    //     padding: 0 30px;
+    //     padding-top: 60px;
+    //     padding-bottom: 66px;
+    // }
     @media (min-width: @tablet-width) {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 129px 1fr;
+        // justify-content: space-between;
         align-items: center;
         padding: 0 30px;
         padding-top: 60px;
@@ -141,6 +151,7 @@
 
     @media (min-width: @tablet-width) {
         padding: 0;
+        text-align: left;
     }
 }
 

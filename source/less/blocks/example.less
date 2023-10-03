@@ -213,10 +213,15 @@
 }
 
 .example__pict {
-    margin: -80px auto 0;
+
+    margin: 0 auto;
     padding-top: 80%;    
     // паддинг смотрит на ширину контейнера
     position: relative;
+
+    @media (min-width: @desktop-width) {
+        margin: -80px auto 0;
+    }
 }
 
 .example__pict-wrap {
