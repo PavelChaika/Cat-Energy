@@ -150,7 +150,9 @@
     margin-right: 13px;
 }
 
-.contact-info__wrap:active line,
-.contact-info__wrap:active path {
+.contact-info__data:hover ~ .contact-info__icon line,
+.contact-info__data:hover ~ .contact-info__icon path,
+.contact-info__data:focus ~ .contact-info__icon line,
+.contact-info__data:focus ~ .contact-info__icon path {
     stroke: @basic-green;
 }

@@ -84,13 +84,9 @@
 
 .radio__item:hover .radio__decor::before,
 .radio__item:focus .radio__decor::before {
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.19);
-    // border-color: #bababa;
-    border-color: red;
-}
-
-.radio__item:active {
-    opacity: 0.3;
+    // box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.19);
+    border-color: #bababa;
+    // border-color: red;
 }
 
 .radio__item:active .radio__decor::before {
@@ -101,7 +97,8 @@
     background-color: #68B738;
 }
 
-.scheme__option input:active ~ .radio__decor::after {
+.scheme__option input:focus ~ .radio__title,
+.scheme__option input:focus ~ .radio__decor::after {
     opacity: 0.3;
 }
 
