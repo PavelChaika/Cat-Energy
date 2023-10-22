@@ -10,24 +10,25 @@
     line-height: 36px;
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #ebebeb;
-    padding: 26px 0 41px 20px;
+    padding-top: 26px;
+    padding-bottom: 41px;
 
     @media (min-width: @tablet-width) {
         font-size: 60px;
         line-height: 60px;
-        padding: 0;
-        margin-left: 30px;
-        margin-bottom: 23px;
+        padding-top: 64px;
+        padding-bottom: 83px;
         border: none;
     }
 
     @media (min-width: @desktop-width) {
-        margin-left: 110px;
-        margin-bottom: 84px;
+        padding-top: 74px;
+        padding-bottom: 84px;
     }
 }
 
 .products__list {
+    max-width: 1440px;
 
     @media (min-width: @tablet-width) {
         display: grid;
@@ -43,6 +44,7 @@
         row-gap: 62px;
         column-gap: 80px;
         padding: 0 110px;
+        margin: 0 auto;
     }
 }
 
@@ -50,7 +52,7 @@
     border-bottom: 1px solid #ebebeb;
     border-right: none;
     border-left: none;
-    padding: 0px 20px 25px;
+    padding-bottom: 25px;
     text-align: center;
     position: relative;
 
