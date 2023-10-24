@@ -1,13 +1,19 @@
+.html,
+.body {
+    height: 100%;
+}
+
 .body {
     min-width: 320px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .body__container {
-    // max-width: @desktop-lg-width;
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
-    // background-color: rgb(183, 219, 229);
 
     @media (min-width: @tablet-width) {
         padding: 0 30px;
