@@ -1,10 +1,20 @@
 .data {
     border: none;
     padding: 0;
-    border-bottom: 1px solid #d9d9d9;
+    position: relative;
+}
+
+.data::after {
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: #d9d9d9;
+    position: absolute;
+    bottom: 0px;
+    left: -20px;
 
     @media (min-width: @tablet-width) {
-        border: none;
+        display: none;
     }
 }
 
